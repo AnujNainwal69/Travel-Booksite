@@ -25,8 +25,8 @@ const HomePage = () => {
             Enjoy unique travels and get a chance to explore destinations that
             feel beyond this world
           </p>
-          <button className="p-2 bg-[#79f2f2b4] rounded-xl text-[#ffffff] inline-flex items-center justify-center hover:bg-[#72e5c6] animate-bounce text-2xl">
-            Book Now
+          <button className="p-2 bg-orange-400 mt-14  rounded-xl text-[#ffffff] inline-flex items-center justify-center hover:text-accent-foreground h-10 rounded-md px-8 text-black border-white hover:bg-white/10 animate-bounce text-2xl">
+            Book Now 
           </button>
         </div>
       </section>
@@ -102,7 +102,7 @@ const HomePage = () => {
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-xl font-bold">{place.title}</h3>
-                      <button className="bg-emerald-600 m-2 p-2 rounded-xl text-white">
+                      <button className="bg-blue-600 m-2 p-2 rounded-xl text-white">
                         Book Now
                       </button>
                     </div>

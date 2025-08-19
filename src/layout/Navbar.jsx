@@ -34,8 +34,9 @@ const Navbar = () => {
                 {page}
               </Link>
             ))}
-            <button className="p-2 bg-[#2C3E50] rounded-xl text-white hover:bg-[#5c7d9e]">
-              Book Now
+            <button className="p-2 bg-[#eb6607] rounded-xl text-white hover:bg-[#0b1906]">
+              Book Now 
+              
             </button>
           </div>
 
