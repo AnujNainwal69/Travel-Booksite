@@ -28,13 +28,8 @@ const HomePage = () => {
             Enjoy unique travels and get a chance to explore destinations that
             feel beyond this world
           </p>
-<<<<<<< HEAD
-          <button className="p-2 bg-orange-400 mt-14  rounded-xl text-[#ffffff] inline-flex items-center justify-center hover:text-accent-foreground h-10 rounded-md px-8 text-black border-white hover:bg-white/10 animate-bounce text-2xl">
-            Book Now 
-=======
           <button onClick={openModal} className="p-2 bg-[#79f2f2b4] rounded-xl text-[#ffffff] inline-flex items-center justify-center hover:bg-[#72e5c6] animate-bounce text-2xl">
             Book Now
->>>>>>> 308466d142177827679b8289492123614e550a6e
           </button>
         </div>
       </section>
