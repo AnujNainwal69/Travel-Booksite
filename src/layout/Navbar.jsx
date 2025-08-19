@@ -3,11 +3,16 @@ import { useLocation, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { PiPeaceFill } from "react-icons/pi";
+import { useBooking } from "../Context/BookingContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation(); // Get current path
   const currentPath = location.pathname;
+
+  // Importing the openModal function from BookingContext
+  const { openModal } = useBooking();
+
 
   return (
     
@@ -34,7 +39,7 @@ const Navbar = () => {
                 {page}
               </Link>
             ))}
-            <button className="p-2 bg-[#2C3E50] rounded-xl text-white hover:bg-[#5c7d9e]">
+            <button onClick={openModal} className="p-2 bg-[#2C3E50] rounded-xl text-white hover:bg-[#5c7d9e]">
               Book Now
             </button>
           </div>
@@ -66,7 +71,7 @@ const Navbar = () => {
                 {page}
               </Link>
             ))}
-            <button className="p-2 bg-text-[#2C3E50] rounded-xl text-white w-full">
+            <button onClick={openModal}   className="p-2 bg-text-[#2C3E50] rounded-xl text-white w-full bg-black ">
               Book Now
             </button>
           </div>
